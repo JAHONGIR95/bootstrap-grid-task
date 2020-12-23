@@ -1,0 +1,443 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #07003B;
+  -webkit-box-shadow: 0px 4px 20px rgba(7, 0, 59, 0.2);
+          box-shadow: 0px 4px 20px rgba(7, 0, 59, 0.2);
+}
+
+header .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header__logo {
+  width: 119px;
+  height: 41px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+header .header__address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  position: relative;
+}
+
+header .header__address::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  left: -30px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(../images/location.svg);
+  width: 15px;
+  height: 20px;
+}
+
+header .header .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header .phone__number {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 30px 0;
+}
+
+header .header .phone__number:first-child {
+  margin-right: 12px;
+  position: relative;
+}
+
+header .header .phone__number:first-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  left: -32px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 22px;
+  height: 22px;
+  background-image: url(../images/phone2.svg);
+}
+
+header .header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header .menu__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+header .header .menu__image {
+  width: 40px;
+  height: 19px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.middle-title {
+  padding-top: 50px;
+  padding-bottom: 90px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 41px;
+  text-align: center;
+  color: #07003B;
+}
+
+.service-card {
+  overflow: hidden;
+  background-color: #fff;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+
+.service-card .service-picture {
+  position: relative;
+}
+
+.service-card .service-picture__image {
+  background: url(new_tone_school.jpg);
+  border-radius: 3px 3px 0px 0px;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.service-card .service-picture__logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+}
+
+.service-card .service-picture__discound {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  padding: 8px 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FF027E;
+}
+
+.service-card .card-info {
+  padding: 7px 10px;
+}
+
+.service-card .card-info__title {
+  display: inline-block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #010F56;
+  margin-bottom: 11px;
+}
+
+.service-card .card-info__tag {
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 8px 20px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  background: #FCCC43;
+  border-radius: 2px;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.service-card .card-info__tag:hover {
+  background: #1CB60E;
+}
+
+.service-card .card-info__meta {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000;
+  margin-bottom: 6px;
+}
+
+.service-card .card-info__meta b {
+  margin-right: 5px;
+}
+
+.service-card .card-info__meta:nth-of-type(2) {
+  margin-bottom: 22px;
+  background: #FFFFFF;
+}
+
+.service-card .card-info .btn {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #07003B;
+  padding: 11px 66px;
+  border: 1px solid #010F56;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.service-card .card-info .btn:hover {
+  background: #07003B;
+  color: #fff;
+}
+
+footer {
+  background: #07032B;
+}
+
+footer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer__logo {
+  width: 119px;
+  height: 41px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer .footer__guarantee {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  position: relative;
+}
+
+footer .footer__guarantee::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  left: -20px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(../images/copyright.svg);
+  width: 14px;
+  height: 14px;
+}
+
+footer .footer .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer .phone__number {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 45px 0;
+}
+
+footer .footer .phone__number:first-child {
+  margin-right: 12px;
+  position: relative;
+}
+
+footer .footer .phone__number:first-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  left: -32px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 22px;
+  height: 22px;
+  background-image: url(../images/phone2.svg);
+}
+
+footer .media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .media .social {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-left: 25px;
+  position: relative;
+}
+
+footer .media .social:first-child {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  left: -32px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 22px;
+  height: 22px;
+  background-image: url(../images/facebook.svg);
+}
+
+footer .media .social:nth-of-type(2) {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  left: -32px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 22px;
+  height: 22px;
+  background-image: url(../images/Instagram.svg);
+}
+
+footer .media .social:last-child {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  left: -32px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 22px;
+  height: 22px;
+  background-image: url(../images/Telegram.svg);
+}
+
+.icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  left: 0;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.icon::before--location::before {
+  background-image: url(../images/phone23.svg);
+  width: 15px;
+  height: 20px;
+}
+/*# sourceMappingURL=main.css.map */
