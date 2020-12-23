@@ -150,9 +150,6 @@ header .header .menu__image {
           box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   margin-bottom: 30px;
-}
-
-.service-card .service-picture {
   position: relative;
 }
 
@@ -188,6 +185,7 @@ header .header .menu__image {
   font-size: 20px;
   line-height: 26px;
   color: #FF027E;
+  border-radius: 5px;
 }
 
 .service-card .card-info {
@@ -361,6 +359,9 @@ footer .media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .media .social {
@@ -370,11 +371,11 @@ footer .media .social {
   line-height: 18px;
   color: #FFFFFF;
   text-decoration: none;
-  margin-left: 25px;
+  margin-left: 55px;
   position: relative;
 }
 
-footer .media .social:first-child {
+footer .media .social:first-child::before {
   content: "";
   position: absolute;
   top: 0;
@@ -390,7 +391,7 @@ footer .media .social:first-child {
   background-image: url(../images/facebook.svg);
 }
 
-footer .media .social:nth-of-type(2) {
+footer .media .social:nth-of-type(2)::before {
   content: "";
   position: absolute;
   top: 0;
@@ -406,7 +407,7 @@ footer .media .social:nth-of-type(2) {
   background-image: url(../images/Instagram.svg);
 }
 
-footer .media .social:last-child {
+footer .media .social:last-child::before {
   content: "";
   position: absolute;
   top: 0;

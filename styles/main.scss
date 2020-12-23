@@ -120,9 +120,10 @@ header{
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     margin-bottom: 30px;
+    position: relative;
+
 
     .service-picture{
-        position: relative;
 
         &__image{
             background: url(new_tone_school.jpg);
@@ -155,6 +156,7 @@ header{
             font-size: 20px;
             line-height: 26px;
             color: #FF027E;
+            border-radius: 5px;
         }
     
     }
@@ -316,6 +318,7 @@ footer{
 
     .media{
         display: flex;
+        align-items: center;
 
         .social{
             font-style: normal;
@@ -324,26 +327,26 @@ footer{
             line-height: 18px;
             color: #FFFFFF;
             text-decoration: none;
-            margin-left: 25px;
+            margin-left: 55px;
             position: relative;
 
-            &:first-child{
+            &:first-child::before{
                 content: "";
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        right: auto;
-                        left: -32px;
-                        margin: auto;
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                        background-position: center;
-                        width: 22px;
-                        height: 22px;
-                        background-image: url(../images/facebook.svg);
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: auto;
+                left: -32px;
+                margin: auto;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                width: 22px;
+                height: 22px;
+                background-image: url(../images/facebook.svg);
             }
 
-            &:nth-of-type(2){
+            &:nth-of-type(2)::before{
                 content: "";
                         position: absolute;
                         top: 0;
@@ -359,7 +362,7 @@ footer{
                         background-image: url(../images/Instagram.svg);
             }
 
-            &:last-child{
+            &:last-child::before{
                 content: "";
                         position: absolute;
                         top: 0;
